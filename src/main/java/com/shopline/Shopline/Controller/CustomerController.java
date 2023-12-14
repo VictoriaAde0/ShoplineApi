@@ -9,6 +9,8 @@ import java.util.Optional;
 import com.shopline.Shopline.Model.Customer;
 import com.shopline.Shopline.Service.CustomerService;
 
+@RestController
+@RequestMapping("/api/order-items")
 public class CustomerController {
     private final CustomerService customerService;
 

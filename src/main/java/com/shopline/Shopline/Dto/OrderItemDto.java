@@ -2,6 +2,7 @@ package com.shopline.Shopline.Dto;
 
 import com.shopline.Shopline.Model.Order;
 import com.shopline.Shopline.Model.Product;
+import jakarta.persistence.*;
 
 public class OrderItemDto {
     private Long id;

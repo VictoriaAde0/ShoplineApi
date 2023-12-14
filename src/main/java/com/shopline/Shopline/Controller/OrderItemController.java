@@ -20,7 +20,7 @@ public class OrderItemController {
         this.orderItemService = orderItemService;
     }
 
-    @GetMapping
+    @GetMapping("/get")
     public List<OrderItem> getAllOrderItems() {
         return orderItemService.getAllOrderItems();
     }

@@ -18,8 +18,9 @@ public class ProductController {
         return productService.CreateProduct(productDto);
     }
 
+    @GetMapping("/get")
     public Object GetAllProduct(){return productService.GetAllProduct();}
-
+    @GetMapping("/get/{id}")
     public Object GetProductById(@PathVariable Long id)
     {return productService.GetProductById(id);}
 
