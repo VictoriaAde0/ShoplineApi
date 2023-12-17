@@ -1,7 +1,7 @@
-package com.shopline.Shopline.Controller;
+package com.shopline.Shopline.controller;
 
-import com.shopline.Shopline.Dto.OrderDto;
-import com.shopline.Shopline.Service.OrderService;
+import com.shopline.Shopline.dto.OrderDto;
+import com.shopline.Shopline.service.OrderService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,16 +12,15 @@ public class OrderController {
     public OrderController(OrderService orderService){
         this.orderService = orderService;
     }
-    @PostMapping("/create")
+    @PostMapping("")
     public Object CreateOrder (OrderDto orderDto){
         return orderService.CreateOrder(orderDto);
     }
-    @GetMapping("/get")
+    @GetMapping("")
     public Object GetAllProduct() {
         return orderService.GetAllOrder();
     }
-    @GetMapping("/get/{id}")
+    @GetMapping("/{id}")
     public Object GetProductById(@PathVariable Long id)
     {return orderService.GetOrderById(id);}
-
 }

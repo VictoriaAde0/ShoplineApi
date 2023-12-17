@@ -1,9 +1,9 @@
-package com.shopline.Shopline.Model;
+package com.shopline.Shopline.model;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "customers")
-    public class Customer {
+    public class User {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
@@ -14,16 +14,14 @@ import jakarta.persistence.*;
 
         private Long phoneNumber;
 
-        public Customer() {
+        public User() {
         }
-
-        public Customer(Long id, String name, String email, Long phoneNumber) {
+        public User(Long id, String name, String email, Long phoneNumber) {
             this.id = id;
             this.name = name;
             this.email = email;
             this.phoneNumber = phoneNumber;
         }
-
         public Long getId() {
             return id;
         }

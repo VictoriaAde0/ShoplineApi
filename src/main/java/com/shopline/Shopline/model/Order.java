@@ -1,4 +1,4 @@
-package com.shopline.Shopline.Model;
+package com.shopline.Shopline.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -15,7 +15,6 @@ import java.util.List;
         private long id;
 
         private long customerId;
-
         @CreationTimestamp
         @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
         private LocalDateTime orderDate;
@@ -27,13 +26,15 @@ import java.util.List;
 
         public Order() {
         }
-
         public Order(long id, long customerId, LocalDateTime orderDate, double totalAmount, List<OrderItem> orderItems) {
             this.id = id;
             this.customerId = customerId;
             this.orderDate = orderDate;
             this.totalAmount = totalAmount;
             this.orderItems = orderItems;
+        }
+
+        public static void setUserId(Object userId) {
         }
 
         public long getId() {

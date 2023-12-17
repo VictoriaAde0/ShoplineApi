@@ -1,13 +1,10 @@
-package com.shopline.Shopline.Dto;
+package com.shopline.Shopline.dto;
 
-import com.shopline.Shopline.Model.Order;
-import com.shopline.Shopline.Model.Product;
-import jakarta.persistence.*;
+import com.shopline.Shopline.model.Order;
+import com.shopline.Shopline.model.Product;
 
 public class OrderItemDto {
     private Long id;
-
-
     private Order order;
 
     private Product product;
@@ -59,7 +56,7 @@ public class OrderItemDto {
         this.quantity = quantity;
     }
 
-    public Double getSubtotal() {
+    public double getSubtotal() {
         return subtotal;
     }
 

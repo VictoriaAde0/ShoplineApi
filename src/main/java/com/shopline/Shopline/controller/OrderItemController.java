@@ -1,14 +1,13 @@
-package com.shopline.Shopline.Controller;
+package com.shopline.Shopline.controller;
 
-import com.shopline.Shopline.Model.OrderItem;
-import com.shopline.Shopline.Service.OrderItemService;
+import com.shopline.Shopline.model.OrderItem;
+import com.shopline.Shopline.service.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/order_items")
@@ -33,5 +32,4 @@ public class OrderItemController {
         OrderItem createdOrderItem = orderItemService.createOrderItem(orderItem);
         return new ResponseEntity<>(createdOrderItem, HttpStatus.CREATED);
     }
-
 }

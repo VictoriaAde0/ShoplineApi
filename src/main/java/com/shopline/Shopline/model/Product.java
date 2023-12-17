@@ -1,4 +1,4 @@
-package com.shopline.Shopline.Model;
+package com.shopline.Shopline.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
     @Entity
 
     public class Product {
-
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private String name;
@@ -27,7 +26,6 @@ import jakarta.persistence.Id;
             this.price = price;
             this.stockQuantity = stockQuantity;
         }
-
 
         public String getName() {
             return name;

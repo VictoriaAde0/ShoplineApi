@@ -1,4 +1,4 @@
-package com.shopline.Shopline.Model;
+package com.shopline.Shopline.model;
 import jakarta.persistence.*;
 
     @Entity
@@ -21,7 +21,6 @@ import jakarta.persistence.*;
 
         public OrderItem() {
         }
-
         public OrderItem(Long id, Order order, Product product, int quantity, Double subtotal) {
             this.id = id;
             this.order = order;
@@ -29,7 +28,6 @@ import jakarta.persistence.*;
             this.quantity = quantity;
             this.subtotal = subtotal;
         }
-
         public long getId() {
             return id;
         }

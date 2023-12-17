@@ -1,4 +1,4 @@
-package com.shopline.Shopline.Dto;
+package com.shopline.Shopline.dto;
 
 public class ProductDto {
     private String name;
@@ -39,7 +39,6 @@ public class ProductDto {
     public int getPrice() {
         return price;
     }
-
     public void setPrice(int price) {
         this.price = price;
     }

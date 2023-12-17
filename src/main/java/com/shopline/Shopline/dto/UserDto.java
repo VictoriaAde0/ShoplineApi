@@ -1,6 +1,6 @@
-package com.shopline.Shopline.Dto;
+package com.shopline.Shopline.dto;
 import jakarta.persistence.*;
-public class CustomerDto {
+public class UserDto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
@@ -10,10 +10,9 @@ public class CustomerDto {
 
     private Long phoneNumber;
 
-    public CustomerDto() {
+    public UserDto() {
     }
-
-    public CustomerDto( String name, String email, Long phoneNumber) {
+    public UserDto(String name, String email, Long phoneNumber) {
 
         this.name = name;
         this.email = email;

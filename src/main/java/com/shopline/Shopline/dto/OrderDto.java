@@ -1,4 +1,4 @@
-package com.shopline.Shopline.Dto;
+package com.shopline.Shopline.dto;
 
 public class OrderDto {
     private double totalAmount;
@@ -8,6 +8,10 @@ public class OrderDto {
     public OrderDto(double totalAmount, String orderItems) {
         this.totalAmount = totalAmount;
         this.orderItems = orderItems;
+    }
+
+    public static Object getUserId() {
+        return null;
     }
 
     public double getTotalAmount() {
@@ -25,7 +29,6 @@ public class OrderDto {
     public void setOrderItems(String orderItems) {
         this.orderItems = orderItems;
     }
-
     @Override
     public String toString() {
         return "OrderDTO{" +
